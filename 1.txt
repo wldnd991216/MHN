@@ -1,0 +1,55 @@
+// Example program
+#include <iostream>
+#include <string>
+
+int main()
+{
+  std::cout << "test: ";
+  unsigned short a[4];
+  int b = 4;
+ 
+    a[0] = 1;
+    a[1] = 2;
+    a[2] = 3;
+    a[3] = 4;
+    a[4] = 5;
+   
+    for(int i=0; i<5; i++){
+       
+        std::cout << a[b] << " " ;
+        b = --b;
+    }
+   
+    std::cout << "\n";
+   
+   
+    unsigned short c[4];
+    int e = 0;
+   
+    for(int i=0; i<5; i++) {
+        scanf("%d",&c[e]);
+       
+        e++;
+    }
+   
+    int d = 4;
+   
+    std::cout << "original : ";
+   
+    for(int i=0; i<5; i++){
+       
+        printf("%d ",c[i]);
+       
+    }
+   
+    std::cout << "\n" << "chaned : ";
+   
+    for(int i=0; i<5; i++){
+       
+        printf("%d ",c[d]);
+        d--;
+    }
+   
+   
+    return 0;
+}
